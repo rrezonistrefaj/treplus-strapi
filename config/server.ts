@@ -11,4 +11,9 @@ export default ({ env }: { env: EnvFunction }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  transfer: {
+    remote: {
+      enabled: true,
+    },
+  },
 });
