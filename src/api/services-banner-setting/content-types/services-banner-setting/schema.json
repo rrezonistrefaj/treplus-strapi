@@ -1,0 +1,78 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_banner_settings",
+  "info": {
+    "singularName": "services-banner-setting",
+    "pluralName": "services-banner-settings",
+    "displayName": "Services Banner Settings",
+    "description": "Services page banner configuration including title, description, CTA, images, and trusted companies"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "primaryCta": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "primaryCtaHref": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "trustedByLabel": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "serviceImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "services.service-banner-image",
+      "required": false
+    },
+    "featuredTrustedCompanies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trusted-company.trusted-company"
+    }
+  }
+}
+
+

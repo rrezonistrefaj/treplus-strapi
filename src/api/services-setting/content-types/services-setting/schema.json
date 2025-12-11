@@ -1,0 +1,73 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_settings",
+  "info": {
+    "singularName": "services-setting",
+    "pluralName": "services-settings",
+    "displayName": "Services Settings",
+    "description": "Services section configuration including heading, subheading, service items, contact card, and images"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subheading": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "services.service-item",
+      "required": false
+    },
+    "contactCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services.contact-card",
+      "required": false
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "decorativeIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}
+

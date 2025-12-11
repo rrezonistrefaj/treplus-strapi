@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_banner_animated_contents",
+  "info": {
+    "displayName": "Banner Animated Content",
+    "description": "Animated carousel item for the banner (Development, Marketing, Design)"
+  },
+  "options": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "wordColor": {
+      "type": "string",
+      "required": true
+    },
+    "overlayImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}
+

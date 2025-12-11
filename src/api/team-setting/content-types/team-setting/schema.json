@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "team_settings",
+  "info": {
+    "singularName": "team-setting",
+    "pluralName": "team-settings",
+    "displayName": "Team Settings (Homepage)",
+    "description": "Homepage Team section configuration with title, description, and CTA button"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "viewAllButtonText": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "viewAllButtonHref": {
+      "type": "string",
+      "required": true,
+      "default": "/team",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "featuredMembers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-member.team-member"
+    }
+  }
+}
+

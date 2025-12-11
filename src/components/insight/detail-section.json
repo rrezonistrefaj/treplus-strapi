@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_insight_detail_sections",
+  "info": {
+    "displayName": "Insight Detail Section",
+    "description": "Detail section content for insight pages (heading and content)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,116 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_settings",
+  "info": {
+    "singularName": "footer-setting",
+    "pluralName": "footer-settings",
+    "displayName": "Footer Settings",
+    "description": "Configuration for the Footer section, including logo, tagline, navigation links, and social media links"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "tagline": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "exploreTitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "navigationLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.navigation-link",
+      "required": false
+    },
+    "servicesTitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "servicesLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.navigation-link",
+      "required": false
+    },
+    "workTitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "workLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.navigation-link",
+      "required": false
+    },
+    "contactTitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contactLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.navigation-link",
+      "required": false
+    },
+    "copyrightText": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.social-link",
+      "required": false
+    }
+  }
+}
+

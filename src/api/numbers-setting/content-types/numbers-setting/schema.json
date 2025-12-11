@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "numbers_settings",
+  "info": {
+    "singularName": "numbers-setting",
+    "pluralName": "numbers-settings",
+    "displayName": "Numbers Settings",
+    "description": "Numbers section configuration with heading and statistic cards"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "headingStrong": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "headingSubtle": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "numbers.number-card",
+      "required": false
+    }
+  }
+}
+
+

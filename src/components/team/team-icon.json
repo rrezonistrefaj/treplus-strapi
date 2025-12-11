@@ -1,0 +1,79 @@
+{
+  "collectionName": "components_team_team_icons",
+  "info": {
+    "displayName": "Team Icon",
+    "description": "Decorative icon for team member cards with positioning"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "width": {
+      "type": "integer",
+      "required": true,
+      "default": 200,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "height": {
+      "type": "integer",
+      "required": true,
+      "default": 200,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "mobileWidth": {
+      "type": "integer",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "mobileHeight": {
+      "type": "integer",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "positionClass": {
+      "type": "string",
+      "required": true,
+      "default": "-right-8 -top-8",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "mobilePositionClass": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}
+

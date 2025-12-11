@@ -1,9 +1,61 @@
 import path from 'path';
 
-export default ({ env }) => {
-  const client = env('DATABASE_CLIENT', 'sqlite');
+type EnvFunction = {
+  (key: string, defaultValue?: string): string;
+  int: (key: string, defaultValue?: number) => number;
+  bool: (key: string, defaultValue?: boolean) => boolean;
+  array: (key: string, defaultValue?: string[]) => string[];
+};
 
-  const connections = {
+export default ({ env }: { env: EnvFunction }) => {
+  const client = env('DATABASE_CLIENT', 'sqlite') as 'mysql' | 'postgres' | 'sqlite';
+
+  const connections: {
+    mysql: {
+      connection: {
+        host: string;
+        port: number;
+        database: string;
+        user: string;
+        password: string;
+        ssl: false | {
+          key?: string;
+          cert?: string;
+          ca?: string;
+          capath?: string;
+          cipher?: string;
+          rejectUnauthorized: boolean;
+        };
+      };
+      pool: { min: number; max: number };
+    };
+    postgres: {
+      connection: {
+        connectionString?: string;
+        host: string;
+        port: number;
+        database: string;
+        user: string;
+        password: string;
+        ssl: false | {
+          key?: string;
+          cert?: string;
+          ca?: string;
+          capath?: string;
+          cipher?: string;
+          rejectUnauthorized: boolean;
+        };
+        schema: string;
+      };
+      pool: { min: number; max: number };
+    };
+    sqlite: {
+      connection: {
+        filename: string;
+      };
+      useNullAsDefault: boolean;
+    };
+  } = {
     mysql: {
       connection: {
         host: env('DATABASE_HOST', 'localhost'),

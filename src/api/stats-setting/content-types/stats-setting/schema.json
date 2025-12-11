@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "stats_setting",
+  "info": {
+    "singularName": "stats-setting",
+    "pluralName": "stats-settings",
+    "displayName": "Stats Settings",
+    "description": "Statistics section configuration including heading and stat items"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "headingStrong": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "headingSubtle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stats.stat-item",
+      "required": false
+    }
+  }
+}
+

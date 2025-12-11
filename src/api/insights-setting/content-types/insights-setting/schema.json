@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "insights_settings",
+  "info": {
+    "singularName": "insights-setting",
+    "pluralName": "insights-settings",
+    "displayName": "Insights Settings",
+    "description": "Insights section configuration including title, description, and see more button"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seeMoreLabel": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seeMoreButtonHref": {
+      "type": "string",
+      "required": false,
+      "default": "/insights",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}
+

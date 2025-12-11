@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbar_setting",
+  "info": {
+    "singularName": "navbar-setting",
+    "pluralName": "navbar-settings",
+    "displayName": "Navbar Settings",
+    "description": "Global navbar/header settings including logo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "logoAlt": {
+      "type": "string",
+      "required": true,
+      "default": "treplus logo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
+

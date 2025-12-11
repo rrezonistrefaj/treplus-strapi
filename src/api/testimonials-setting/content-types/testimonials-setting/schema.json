@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "testimonials_settings",
+  "info": {
+    "singularName": "testimonials-setting",
+    "pluralName": "testimonials-settings",
+    "displayName": "Testimonials Settings",
+    "description": "Testimonials section configuration including title and description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
+

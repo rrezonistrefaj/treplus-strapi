@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_service_highlight_detail_sections",
+  "info": {
+    "displayName": "Service Detail Section",
+    "description": "Detail section content for service detail pages (heading and content)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
+

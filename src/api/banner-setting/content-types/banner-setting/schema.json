@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "banner_setting",
+  "info": {
+    "singularName": "banner-setting",
+    "pluralName": "banner-settings",
+    "displayName": "Banner Settings",
+    "description": "Main banner configuration including title, description, and CTA"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "titleStatic": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "primaryCta": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "trustedByLabel": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "animatedContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.animated-content",
+      "required": false
+    },
+    "orangePlusImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}
+

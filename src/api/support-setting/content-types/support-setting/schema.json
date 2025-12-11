@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "support_settings",
+  "info": {
+    "singularName": "support-setting",
+    "pluralName": "support-settings",
+    "displayName": "Support Settings",
+    "description": "Configuration for the Support section, including support cards"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "support.support-card",
+      "required": false
+    }
+  }
+}
+
